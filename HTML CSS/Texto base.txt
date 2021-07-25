@@ -1,0 +1,180 @@
+﻿HTML5 CSS3
+ 
+quando falamos de estilo usamos a class quando falamos de comportamento usamos o id
+
+Site mobile input types para mudanças de teclado para facilitar o uso no celular
+
+<!DOCTYPE html>; essa tag deve estar em toda primeira linha do codigo para indicar para o navegador que estamos usando a versao mais recente do html no caso o html5;
+
+<html lang="pt-br>; marca tudo que é html e o lang diz qual e a linguagem sendo usada no caso o portugues do brasil, usa-se isso para que se um usuario com uma outra linguagem acessar a pagina o navegador dara opcao de traducao para ele;
+
+<head>; dentro dessa tag deverao ser colocado as tags que passam informacoes ao navegador no por exemplo a tag meta e title
+
+<main>; nesta tag se coloca a parte mais importante da pagina
+
+<form> tag para fazer formulario
+
+<label for="y" label sempre antes do input para dizer para que e aquela informacao sendo inserida
+<input type="x" id="Y"> onde o usuario colocara as informacoes{
+type text; inserir texto, type="submit" value=""; submit e para enviar o formulario e o value da nome ao botao, type="radio"; bolinha (no radio usa o type="cx" NAME="algo" para que nao deixe marcar dois radios ao  mesmo tempo, type="checkbox"
+
+*se eu quiser deixar um input obrigatorio dentro dele deve escrever required e se eu quiser deixar algo escrito dentro da caixa usa o placeholder="ejdfygweu"
+
+<textarea> espaco para escrever algo
+
+<body>; dentro dessa tag devera ser passado todo o conteudo que será exibido ao usuario
+
+<meta charset=UTF-8>; resolve probemas de acentuação
+
+<title>; esta tag muda o titulo da pagina la em cima na aba do navegador
+
+<h> Usado para dar destaaque em textos ou imagens até
+
+<p>; paragrafo
+
+<fieldset> divisao para qando tem muitas coisas sobreum mesmo assunto eexemplo sobre cartao de credito tudo referente a ele estará dentro do fieldset
+nele nao se usa a tag <p> mas sim <legend>
+
+<strong>; Coloca algo em negrito
+
+<em>; tranforma o texto em italico
+
+<x id=" ">; o id da um nome especifico para esta tag para que somente ela possa ser mudada no css sem interferir com as outras (itens unicos)
+
+<img src=" "; a tag img serev para inserir uma imagem no html ja o src (source) serve para indicar onde esta a imagem que sera inserida nele deve-se escrever o nome da imagem.extensao
+
+<ul>; usado para fazer lista não ordenada
+
+<ol>; usdada paar fazer listas ordenada
+
+<li>; separa certinho os elementos da lista
+
+<a>; atrela um link a algo
+
+<div> separa os itens do html
+
+em: unidade medida proporcional dos pixels
+class: especifica itens que serao repetidos
+
+<nav>; navegaçao
+
+ caixas de opcoes exemplos:
+<select>
+	<option>Manhã</option>
+              <option>Tarde</option
+              <option>Noite</option>
+</select>
+
+tabela:
+tag <table>; corpo da tabela <tbody>; linhas da tabela tag<tr>; e celulas tag <td>; tag do head da tabela <thead>; celula do head <th>; tfoot footer da tabela
+
+para usuarios com baixa visão na imagens podemos usar a tag alt="" e descreve-la
+
+quando temos uma divisao voltada a um objetivo usa-se a <section>
+
+CSS
+
+** sempre que usar lista use o display:inline-block
+quando temos uma lista ela esta em bloco ocupando a largura inteira da pagina para que tenha somente a lagura do conteudo usamos o display: inline-block
+
+ para que o navegador nao atrapalhe no css usa-se um link com  o reset.css
+
+existem varias formas implementar o css sendo uma colocando as informacoes direto na tag do html ou abrindo a tag <style> noo head ou com um arquivo externo que é o mais comum
+
+** quando for montar o CSS poor convenção ele deve seguir a mesma ordem do html
+
+<link rel="stylesheet" href="style.css">; esta tag fica no ead e serve para o html buscar informacoes deoutro arquivo no casso style.css
+
+<style></style>; tag que indica o css deve ser colocado dentro do <head> 
+
+<x style="font-size: XXpx">: essa instrucao do css muda o tamanho da fonte
+
+<x style="text-align: center"> alinha o texto ao centro
+
+font-style: italic;
+
+width; altera a largura
+
+display: inline-block; permite colocar algo ao lado de algum texto ex de uma listas 
+
+no css para se referenciar a um identificador (id) usa-se # ja para classes (class) usa-se o .
+
+vertical-align:top faz o texto seguir a se alinhar a linha de cima de uma imagem
+
+text-transform; transforma o texto{
+  uppercase- Maiusculo
+}
+
+font weight; peso d fonte{
+  bold: negrito
+}
+
+text-decoration: none; tira o sublinhado debaixo das palavras
+
+posistion: absolute: muda o ponto inicial de algum elemento para poder posicionar ele livremente
+
+box-sizing: border-box; deixa definitivo a medida do width evitando futuros problemas com o padding
+
+<footer>: rodape
+
+BORDAS{
+ border-color; da cor a borda
+ border-width; da largura a borda;
+ border-style; estilo da borda (solid) etc
+
+para acontecer algo qaundo passa o mouse por cima usa a tag:hover{}
+
+para acontecer algo quando clicar em cima de algo usa a tag:active{}
+
+unicode table.com da pra ver caracteres especiais la pra por no css
+
+color: cor da fonte
+
+transition: permite que quando pásse o mouse por cima a mudança ocorra  mais suavemente
+
+num botao para mudar o cursor para mostra que algo é clicavel usase o cursor:pointer;
+
+se qunado eu passar o mouse por cima de um elemento e eu queria e ele fique maior usa-se o transform: scale(1.2(20%ex) 
+
+para o texto ficar em volta de um elemento como uma imagem por exemplo usa-se o float: lado(right, left etc) e float mexe com a estrutura de toda a pagina para evitar que ele altere todos os elmentos usa o clear:lado posto no float
+
+sites das fontes e o google fontes
+
+A tag <iframe> é específica para abrir "janelas" em nosso site tipo pra colocar mapas, videos etc
+
+***No display: inline-block pra fazer total efeito nao deve ter nenhum espaco entre as tags nenhuma linha pulada nada
+
+para aumentar a distancia entre as linhas de um texto usa-se o line-height: Xem
+
+numa lista por exemplo que cada item tem a mesam classe para fazer alguma alteração num iten especifico usa a .classe:first-child(para mudar so o primeiro itens) .classe:last-child(ultimo item) e nth-child(numero do item) (paraselecionar algum item do meio) pode usar por ex para mexer so no itens pares .class:nth-child(2n)
+
+para fazer um degrade de cores de fundo uso o background: linear-gradiente(desta cor, para esta cor)
+
+para moficar uma letra especifica ou uma linha especifica pode usar .classe:first-line ou first-letter
+pode se tamebm modificar antes do conteudo e depois dele exemplo do .classe:before e .classe:after
+
+Seletores avançados;
+para selcionar algo bem especifico dentro de um comjunto podemos usar;
+
+tag > x; seleciona o filho direto da tag
+tag + x; seleciona o q vem depois da tag
+tag ~ x; seleciona tudo depois da tag
+
+opacidade:
+paar adicionar opcaidade em alguma coisa usamos opacity: e a porcentagem de 0 a 100% que sera no formato de 0 a 1
+para mudar a cor da opacidade usa o rgba
+
+sombra
+para adicionar uma sombra se usa o box-shadow( X Y blur espalhamento cor) (nao e obrigatorio por todos)
+da pra fazer um sombreado em volta duma section ou div etc usando uma sombra intera com o box-shadow:insert
+para criar uma sombra pra um texto usa o text-shadow:
+
+usa o @media screen and (max-width: 480px) para representar na tela do celular
+
+
+
+
+
+
+
+
